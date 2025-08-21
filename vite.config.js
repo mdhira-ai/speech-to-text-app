@@ -5,13 +5,4 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  optimizeDeps: {
-    exclude: ['@xenova/transformers']
-  },
-  server: {
-    headers: {
-      'Cross-Origin-Embedder-Policy': 'credentialless',
-      'Cross-Origin-Opener-Policy': 'same-origin'
-    }
-  }
 })
